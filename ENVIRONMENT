@@ -1,0 +1,136 @@
+# Rename this file to .env.local once you have filled in the below environment variables!
+
+# Get your GROQ API Key here -
+# https://console.groq.com/keys
+# You only need this environment variable set if you want to use Groq models
+GROQ_API_KEY=
+
+# Get your Open AI API Key by following these instructions -
+# https://help.openai.com/en/articles/4936850-where-do-i-find-my-openai-api-key
+# You only need this environment variable set if you want to use GPT models
+OPENAI_API_KEY=
+
+# Get your Anthropic API Key in your account settings -
+# https://console.anthropic.com/settings/keys
+# You only need this environment variable set if you want to use Claude models
+ANTHROPIC_API_KEY=
+
+# Get your OpenRouter API Key in your account settings -
+# https://openrouter.ai/settings/keys
+# You only need this environment variable set if you want to use OpenRouter models
+OPEN_ROUTER_API_KEY=
+
+# Get your Google Generative AI API Key by following these instructions -
+# https://console.cloud.google.com/apis/credentials
+# You only need this environment variable set if you want to use Google Generative AI models
+GOOGLE_GENERATIVE_AI_API_KEY=
+
+# You only need this environment variable set if you want to use oLLAMA models
+# EXAMPLE http://localhost:11434
+OLLAMA_API_BASE_URL=
+
+# You only need this environment variable set if you want to use OpenAI Like models
+OPENAI_LIKE_API_BASE_URL=http://localhost:4000
+
+# You only need this environment variable set if you want to use DeepSeek models through their API
+DEEPSEEK_API_KEY=
+
+# Get your OpenAI Like API Key
+OPENAI_LIKE_API_KEY=
+
+# Get your Mistral API Key by following these instructions -
+# https://console.mistral.ai/api-keys/
+# You only need this environment variable set if you want to use Mistral models
+MISTRAL_API_KEY=
+
+# Include this environment variable if you want more logging for debugging locally
+VITE_LOG_LEVEL=debug
+
+
+
+
+##########################################################################
+#
+# PINOKIO_SHARE_CLOUDFLARE
+# Set this variable to share the app publicly via cloudflare tunnel.
+#
+##########################################################################
+PINOKIO_SHARE_CLOUDFLARE=false
+
+##########################################################################
+#
+# PINOKIO_SHARE_PASSCODE
+#
+# By default, your publicly shared app will be 100% open to anyone
+# with the link via Cloudflare.
+#
+# You can add authorization by protecting it with a passcode.
+# Set this value, and any access to the app will require a pass code input
+#
+##########################################################################
+PINOKIO_SHARE_PASSCODE=
+
+##########################################################################
+#
+# PINOKIO_SCRIPT_DEFAULT
+# If this variable is false, 'default': true menu items in pinokio.js
+# will NOT automatically run
+#
+##########################################################################
+PINOKIO_SCRIPT_DEFAULT=true
+
+##########################################################################
+#
+# GRADIO_TEMP_DIR
+# All the files uploaded through gradio goes here.
+#
+# Delete this line to store the files under PINOKIO_HOME/cache/GRADIO_TEMPDIR
+# or change the path if you want to use a different path
+#
+##########################################################################
+GRADIO_TEMP_DIR=./cache/GRADIO_TEMP_DIR
+
+##########################################################################
+#
+# HF_HOME
+#
+# Huggingface cache
+# All the model files automatically downloaded through libraries like
+# diffusers, transformers, etc. will be stored under this path
+#
+# You can save disk space by deleting this line, which will store all
+# huggingface files under PINOKIO_HOME/cache/HF_HOME without redundancy.
+#
+##########################################################################
+HF_HOME=./cache/HF_HOME
+
+##########################################################################
+#
+# TORCH_HOME
+#
+# Torch hub cache
+# All the files automatically downloaded by pytorch will be stored here
+#
+# You can save disk space by deleting this line, which will store all
+# torch hub files under PINOKIO_HOME/cache/TORCH_HOME without redundancy.
+#
+##########################################################################
+TORCH_HOME=./cache/TORCH_HOME
+
+##########################################################################
+#
+# PINOKIO_SHARE_LOCAL
+# Set this variable to true to share the app on the local network.
+#
+##########################################################################
+PINOKIO_SHARE_LOCAL=false
+
+##########################################################################
+#
+# PINOKIO_SHARE_LOCAL_PORT
+# Set this variable to use fixed port for the local network sharing feature
+# If not specified, a random port will be assigned to the local proxy used
+# for local sharing.
+#
+##########################################################################
+PINOKIO_SHARE_LOCAL_PORT=
